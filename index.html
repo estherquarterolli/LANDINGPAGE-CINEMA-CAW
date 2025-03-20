@@ -3,85 +3,236 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cine cinema</title>
+    <title>Cine Cinema</title>
 </head>
-<body>
-    <header>
+<body style="background-color: #1C1C3A; color: white; margin: 0;  padding: 0; font-family: Arial, Helvetica, sans-serif; display: flex; flex-direction: column; align-items: center;">
+    
+    <!-- Cabeçalho -->
+    <header style="background-color: rgb(243, 234, 230); color: rgb(41, 40, 49); width: 100%;
+     height: 60px; display: flex; justify-content: center; align-items: center; justify-content: space-around; position: fixed;">
+
+        <div style="display: flex; flex-direction: row; align-items: center;" class="logo">
+            <ion-icon style="color: rgb(41, 40, 49); font-size: 40px;" name="videocam-outline"></ion-icon>
+            <h1 style="font-size: 30px;">CINE CINEMA</h1>
+        </div>
         <nav>
-            <ul>
-                <li>Programação</li>
-                <li>Ingressos</li>
-                <li>Avisos</li>
+            <ul style="display: flex; flex-direction: row; list-style: none; padding-right: 20px;">
+                <li style="padding-right: 20px; text-transform: uppercase; font-weight: bolder;">
+                    <a href="#programacao" style="text-decoration: none; color: inherit;">Programação</a>
+                </li>
+                <li style="padding-right: 20px; text-transform: uppercase; font-weight: bolder;">
+                    <a href="#ingresso" style="text-decoration: none; color: inherit;">Ingressos</a>
+                </li>
+                <li style="padding-right: 20px; text-transform: uppercase; font-weight: bolder;">
+                    <a href="#comentario" style="text-decoration: none; color: inherit;">Comentários</a>
+                </li>
             </ul>
         </nav>
+        <button onclick="location.href='mailto:estherquuarterollii@gmail.com'" style="text-transform: uppercase; background-color: rgb(41, 40, 49); border-radius:5px; padding:10px; color:white; cursor: pointer;">
+            Contato
+        </button>
+        
     </header>
-
+    
+    
+    <!-- Trailer -->
+    <aside style="margin-top: 20px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+        <h1 style="padding-top: 50px;">Assista ao trailer</h1>
+        <video width="1020" height="400" controls>
+            <source src="assets/videoplayback.webm" type="video/mp4">
+        </video>
+    </aside>
+    
     <!-- Programação -->
-    <section>
-
-<!-- Tabela de filmes em exposição -->
-
-<table>
-    <tr>
-        <th>Nome</th>
-        <th>Gênero</th>
-        <th>Tipo</th>
-     
-    </tr>
-    <tr>
-        <td>Better Man </td>
-        <td>Musical</td>
-        <td>Legendado</td>
-     
-    </tr>
-    <tr>
-        <td>Uma advogada brilhante</td>
-        <td>Comédia</td>
-        <td>Dublado</td>
+    <section id="programacao"style="width: 1020px; display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
         
-    </tr>
-    <tr>
-        <td>O homem cão</td>
-        <td>Infantil</td>
-        <td>Dublado</td>
+        <!-- Tabela de Filmes -->
+        <table style="width: 100%; border-collapse: collapse; text-align: center; background: #333; border-radius: 10px; overflow: hidden;">
+            <tr style="background:#E50914;">
+                <th>Nome</th>
+                <th>Gênero</th>
+                <th>Tipo</th>
+            </tr>
+            <tr >
+                <td style="padding-bottom: 7px;padding-top: 3px;">Better Man</td>
+                <td style="padding-bottom: 7px;padding-top: 3px;">Musical</td>
+                <td style="padding-bottom: 7px;padding-top: 3px;">Legendado</td>
+            </tr>
+            <tr>
+                <td style="padding-bottom: 7px;padding-top: 3px;">Uma Advogada Brilhante</td>
+                <td style="padding-bottom: 7px;padding-top: 3px;">Comédia</td>
+                <td style="padding-bottom: 7px;padding-top: 3px;">Dublado</td>
+            </tr>
+            <tr>
+                <td style="padding-bottom: 7px;padding-top: 3px;">O Homem Cão</td>
+                <td style="padding-bottom: 7px;padding-top: 3px;">Infantil</td>
+                <td style="padding-bottom: 7px;padding-top: 3px;">Dublado</td>
+            </tr>
+        </table>
         
-    </tr>
-</table>
+        <!-- Filme Específico -->
+        <div style="text-align: center; width: 1020px; margin-top: 20px;">
+            <h2>BETTER MAN</h2>
+            <img src="assets/bannerfime.jpeg" alt="Banner do Filme" style="width: 100%; border-radius: 10px;">
+            <p>A ascensão do famoso cantor e compositor britânico Robbie Williams.
+                 Depois de se tornar uma estrela com a boy band Take That na década de 1990, 
+                 ele encontrou o sucesso solo novamente com "Angels".</p>
+        </div>
+        
+        <!-- Tabela de Horários -->
+        <table style="width: 100%; margin-top: 10px; border-collapse: collapse; text-align: center; background: #333; border-radius: 10px; overflow: hidden;">
+            <tr style="background: #E50914;">
+                <th>Dia</th><th>Horário</th><th>Tipo</th><th>Sala</th><th>Ação</th>
+            </tr>
+            <tr>
+                <td style="padding-bottom: 7px;padding-top: 3px;">12/04</td>
+                <td style="padding-bottom: 7px;padding-top: 3px;">12:00</td>
+                <td style="padding-bottom: 7px;padding-top: 3px;">3D</td>
+                <td style="padding-bottom: 7px;padding-top: 3px;">4</td>
+                <td style="padding-bottom: 7px;padding-top: 3px;">
+                <button style="padding: 5px; background-color: #FFC107;">Comprar</button>
+            </td>
+        </tr>
+            <tr>
+                <td style="padding-bottom: 7px;padding-top: 3px;">12/04</td>
+                <td style="padding-bottom: 7px;padding-top: 3px;">12:00</td>
+                <td style="padding-bottom: 7px;padding-top: 3px;">2D</td>
+                <td style="padding-bottom: 7px;padding-top: 3px;">5</td>
+                <td style="padding-bottom: 7px;padding-top: 3px;">
+                <button style="padding: 5px; background-color: #FFC107;">Comprar</button>
+            </td>
+            </tr>
+            <tr>
+                <td style="padding-bottom: 7px;padding-top: 3px;">12/04</td>
+                <td style="padding-bottom: 7px;padding-top: 3px;">14:00</td>
+                <td style="padding-bottom: 7px;padding-top: 3px;">3D</td>
+                <td style="padding-bottom: 7px;padding-top: 3px;">4</td>
+                <td style="padding-bottom: 7px;padding-top: 3px;"><button style="padding: 5px; background-color: #FFC107;">Comprar</button>
+                </td>
+            </tr>
+        </table>
 
-        <!-- filme específico: -->
-        <div class="filme_info">
-        <H2>O ultimo Show</H2>
-        <img href="assets/bannerfime.jpeg" alt="imagem">
-        <img href="assets/bannerfilmebetterman.jpeg" alt="imagem">
-    </div>
 
 
-<table>
-    <tr>
-        <th>Dia</th>
-        <th>Horario</th>
-        <th>Tipo</th>
-        <th>Sala</th>
-    </tr>
-    <tr>
-        <td>12/04</td>
-        <td>12:00</td>
-        <td>3D</td>
-        <td>4</td>
-    </tr>
-    <tr>
-        <td>12/04</td>
-        <td>12:00</td>
-        <td>2D</td>
-        <td>5</td>
-    </tr>
-    <tr>
-        <td>12/04</td>
-        <td>14:00</td>
-        <td>3D</td>
-        <td>4</td>
-    </tr>
-</table>
+         <!-- Filme Específico -->
+         <div style="text-align: center; width: 1020px; margin-top: 20px;">
+            <h2>BETTER MAN</h2>
+            <img src="assets/bannerfime.jpeg" alt="Banner do Filme" style="width: 100%; border-radius: 10px;">
+            <p>A ascensão do famoso cantor e compositor britânico Robbie Williams.
+                 Depois de se tornar uma estrela com a boy band Take That na década de 1990, 
+                 ele encontrou o sucesso solo novamente com "Angels".</p>
+        </div>
+        
+        <!-- Tabela de Horários -->
+        <table style="width: 100%; margin-top: 10px; border-collapse: collapse; text-align: center; background: #333; border-radius: 10px; overflow: hidden;">
+            <tr style="background: #E50914;">
+                <th>Dia</th><th>Horário</th><th>Tipo</th><th>Sala</th><th>Ação</th>
+            </tr>
+            <tr>
+                <td style="padding-bottom: 7px;padding-top: 3px;">12/04</td>
+                <td style="padding-bottom: 7px;padding-top: 3px;">12:00</td>
+                <td style="padding-bottom: 7px;padding-top: 3px;">3D</td>
+                <td style="padding-bottom: 7px;padding-top: 3px;">4</td>
+                <td style="padding-bottom: 7px;padding-top: 3px;">
+                <button style="padding: 5px; background-color: #FFC107;">Comprar</button>
+            </td>
+        </tr>
+            <tr>
+                <td style="padding-bottom: 7px;padding-top: 3px;">12/04</td>
+                <td style="padding-bottom: 7px;padding-top: 3px;">12:00</td>
+                <td style="padding-bottom: 7px;padding-top: 3px;">2D</td>
+                <td style="padding-bottom: 7px;padding-top: 3px;">5</td>
+                <td style="padding-bottom: 7px;padding-top: 3px;">
+                <button style="padding: 5px; background-color: #FFC107;">Comprar</button>
+            </td>
+            </tr>
+            <tr>
+                <td style="padding-bottom: 7px;padding-top: 3px;">12/04</td>
+                <td style="padding-bottom: 7px;padding-top: 3px;">14:00</td>
+                <td style="padding-bottom: 7px;padding-top: 3px;">3D</td>
+                <td style="padding-bottom: 7px;padding-top: 3px;">4</td>
+                <td style="padding-bottom: 7px;padding-top: 3px;"><button style="padding: 5px; background-color: #FFC107;">Comprar</button>
+                </td>
+            </tr>
+        </table>
+
+
+
+         <!-- Filme Específico -->
+         <div style="text-align: center; width: 1020px; margin-top: 20px;">
+            <h2>BETTER MAN</h2>
+            <img src="assets/bannerfime.jpeg" alt="Banner do Filme" style="width: 100%; border-radius: 10px;">
+            <p>A ascensão do famoso cantor e compositor britânico Robbie Williams.
+                 Depois de se tornar uma estrela com a boy band Take That na década de 1990, 
+                 ele encontrou o sucesso solo novamente com "Angels".</p>
+        </div>
+        
+        <!-- Tabela de Horários -->
+        <table style="width: 100%; margin-top: 10px; border-collapse: collapse; text-align: center; background: #333; border-radius: 10px; overflow: hidden;">
+            <tr style="background: #E50914;">
+                <th>Dia</th><th>Horário</th><th>Tipo</th><th>Sala</th><th>Ação</th>
+            </tr>
+            <tr>
+                <td style="padding-bottom: 7px;padding-top: 3px;">12/04</td>
+                <td style="padding-bottom: 7px;padding-top: 3px;">12:00</td>
+                <td style="padding-bottom: 7px;padding-top: 3px;">3D</td>
+                <td style="padding-bottom: 7px;padding-top: 3px;">4</td>
+                <td style="padding-bottom: 7px;padding-top: 3px;">
+                <button style="padding: 5px; background-color: #FFC107;">Comprar</button>
+            </td>
+        </tr>
+            <tr>
+                <td style="padding-bottom: 7px;padding-top: 3px;">12/04</td>
+                <td style="padding-bottom: 7px;padding-top: 3px;">12:00</td>
+                <td style="padding-bottom: 7px;padding-top: 3px;">2D</td>
+                <td style="padding-bottom: 7px;padding-top: 3px;">5</td>
+                <td style="padding-bottom: 7px;padding-top: 3px;">
+                <button style="padding: 5px; background-color: #FFC107;">Comprar</button>
+            </td>
+            </tr>
+            <tr>
+                <td style="padding-bottom: 7px;padding-top: 3px;">12/04</td>
+                <td style="padding-bottom: 7px;padding-top: 3px;">14:00</td>
+                <td style="padding-bottom: 7px;padding-top: 3px;">3D</td>
+                <td style="padding-bottom: 7px;padding-top: 3px;">4</td>
+                <td style="padding-bottom: 7px;padding-top: 3px;"><button style="padding: 5px; background-color: #FFC107;">Comprar</button>
+                </td>
+            </tr>
+        </table>
     </section>
+    
+    <!-- Formulário de Compra -->
+    <section id="ingresso"style="width: 1020px; text-align: center; margin-top: 20px;">
+        <h2>Comprar Ingresso</h2>
+        <form method="POST">
+            <select name="filme" style="width: 1035px; padding: 5px;">
+                <option>Selecione um filme</option>
+                <option>Better Man</option>
+                <option>Uma Advogada Brilhante</option>
+                <option>O Homem Cão</option>
+            </select>
+            <input type="text" name="horario" placeholder="Horário" style="width: 100%; padding: 5px; margin-top: 5px;">
+            <input type="number" name="quantidade" placeholder="Quantidade de ingressos" style="width: 100%; padding: 5px; margin-top: 5px;">
+            <button type="submit" style="width:1035px; padding: 10px; margin-top: 10px; background: green; color: white; border: none;">Ir para Pagamento</button>
+        </form>
+    </section>
+    
+    <!-- Seção de Comentários -->
+    <section id="comentario"style="width: 1020px; text-align: center; margin-top: 20px;">
+        <h2>Deixe seu comentário</h2>
+        <form method="POST">
+            <select name="sessao" style="width: 1035px; padding: 5px;">
+                <option>Selecione a sessão</option>
+                <option>Better Man - 12:00</option>
+                <option>Uma Advogada Brilhante - 14:00</option>
+            </select>
+            <input type="text" name="nome" placeholder="Seu nome (opcional)" style="width: 100%; padding: 5px; margin-top: 5px;">
+            <textarea name="comentario" placeholder="Digite seu comentário" style="width: 100%; padding: 5px; margin-top: 5px;"></textarea>
+            <button type="submit" style="width: 1035px; padding: 10px; margin-top: 10px; background: #FFC107; color: white; border: none;">Enviar Comentário</button>
+        </form>
+    </section>
+    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
