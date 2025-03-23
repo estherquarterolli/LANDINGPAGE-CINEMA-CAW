@@ -37,10 +37,8 @@
     
     <!-- Trailer -->
     <aside style="margin-top: 20px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
-        <h1 style="padding-top: 50px;">Assista ao trailer</h1>
-        <video width="1020" height="400" controls>
-            <source src="assets/videoplayback.webm" type="video/mp4">
-        </video>
+        <h1 style="padding-top: 50px;">TRAILER EM DESTAQUE</h1>
+        <iframe width="1020" height="315" src="https://www.youtube.com/embed/_NzqP0jmk3o?si=Gv0I-pE7xL0QHppm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </aside>
     
     <!-- Programação -->
@@ -70,11 +68,11 @@
             </tr>
         </table>
         
-        <!-- Filme Específico -->
+        <!-- Filme Específico 1  -->
         <div style="text-align: center; width: 1020px; margin-top: 20px;">
             <h2>BETTER MAN</h2>
             <img src="assets/bannerfime.jpeg" alt="Banner do Filme" style="width: 100%; border-radius: 10px;">
-            <p>A ascensão do famoso cantor e compositor britânico Robbie Williams.
+            <p STYLE="font-size: large;" >A ascensão do famoso cantor e compositor britânico Robbie Williams.
                  Depois de se tornar uma estrela com a boy band Take That na década de 1990, 
                  ele encontrou o sucesso solo novamente com "Angels".</p>
         </div>
@@ -114,13 +112,12 @@
 
 
 
-         <!-- Filme Específico -->
+         <!-- Filme Específico 2  -->
          <div style="text-align: center; width: 1020px; margin-top: 20px;">
-            <h2>BETTER MAN</h2>
-            <img src="assets/bannerfime.jpeg" alt="Banner do Filme" style="width: 100%; border-radius: 10px;">
-            <p>A ascensão do famoso cantor e compositor britânico Robbie Williams.
-                 Depois de se tornar uma estrela com a boy band Take That na década de 1990, 
-                 ele encontrou o sucesso solo novamente com "Angels".</p>
+            <h2>UMA ADVOGADA BRILHANTE</h2>
+            <img src="assets/maxresdefault.jpg" alt="Banner do Filme" style="width: 100%; border-radius: 10px;">
+            <p STYLE="font-size: large;">Dr. Michelle, um advogado recém-divorciado, decide se disfarçar de mulher para não perder seu emprego durante uma reestruturação
+                e conseguir a guarda de seu filho. No entanto, viver como Dra. Michele se revela mais desafiador do que esperado.</p>
         </div>
         
         <!-- Tabela de Horários -->
@@ -158,13 +155,12 @@
 
 
 
-         <!-- Filme Específico -->
+         <!-- Filme Específico 3  -->
          <div style="text-align: center; width: 1020px; margin-top: 20px;">
             <h2>BETTER MAN</h2>
-            <img src="assets/bannerfime.jpeg" alt="Banner do Filme" style="width: 100%; border-radius: 10px;">
-            <p>A ascensão do famoso cantor e compositor britânico Robbie Williams.
-                 Depois de se tornar uma estrela com a boy band Take That na década de 1990, 
-                 ele encontrou o sucesso solo novamente com "Angels".</p>
+            <img src="assets/images (2).jpeg" alt="Banner do Filme" style="width: 100%; border-radius: 10px;">
+            <p STYLE="font-size: large;">Uma cirurgia que salva vidas une um policial e seu fiel cão policial, e o Homem-Cão nasce.
+                 Aprendendo a aceitar sua nova identidade, Homem-Cão precisa impedir que o supervilão felino Petey cometa uma série de crimes.</p>
         </div>
         
         <!-- Tabela de Horários -->
@@ -204,23 +200,30 @@
     <!-- Formulário de Compra -->
     <section id="ingresso"style="width: 1020px; text-align: center; margin-top: 20px;">
         <h2>Comprar Ingresso</h2>
-        <form method="POST">
+        <form method="POST" action="">
             <select name="filme" style="width: 1035px; padding: 5px;">
                 <option>Selecione um filme</option>
                 <option>Better Man</option>
                 <option>Uma Advogada Brilhante</option>
                 <option>O Homem Cão</option>
             </select>
-            <input type="text" name="horario" placeholder="Horário" style="width: 100%; padding: 5px; margin-top: 5px;">
+            <select name="horário" style="width: 1035px; padding: 5px; margin-top: 5px;">
+                <option>Selecione um horário</option>
+                <option>12:00 - 3D</option>
+                <option>12:00 - 2D</option>
+                <option>14:00</option>
+            </select>
+            <input type="date" name="data" placeholder="Data" style="width: 100%; padding: 5px; margin-top: 5px;">
+        
             <input type="number" name="quantidade" placeholder="Quantidade de ingressos" style="width: 100%; padding: 5px; margin-top: 5px;">
             <button type="submit" style="width:1035px; padding: 10px; margin-top: 10px; background: green; color: white; border: none;">Ir para Pagamento</button>
         </form>
     </section>
     
     <!-- Seção de Comentários -->
-    <section id="comentario"style="width: 1020px; text-align: center; margin-top: 20px;">
+    <section id="comentario"style="width: 1020px; text-align: center; margin-top: 20px; ">
         <h2>Deixe seu comentário</h2>
-        <form method="POST">
+        <form method="POST" action="">
             <select name="sessao" style="width: 1035px; padding: 5px;">
                 <option>Selecione a sessão</option>
                 <option>Better Man - 12:00</option>
@@ -231,7 +234,9 @@
             <button type="submit" style="width: 1035px; padding: 10px; margin-top: 10px; background: #FFC107; color: white; border: none;">Enviar Comentário</button>
         </form>
     </section>
-    
+    <footer style="background-color: #c21010; color: white; padding: 20px; margin-top: 30px; width: 100%; display: flex; align-items: center; justify-content: center;">
+        &copy; 2025 Cine Cinema. Todos os direitos reservados.
+    </footer>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
