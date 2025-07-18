@@ -3,242 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cine Cinema</title>
-</head>
-<body style="background-color: #1C1C3A; color: white; margin: 0;  padding: 0; font-family: Arial, Helvetica, sans-serif; display: flex; flex-direction: column; align-items: center;">
+    <title>CineMax | A Sua Experiência de Cinema</title>
     
-    <!-- Cabeçalho -->
-    <header style="background-color: rgb(243, 234, 230); color: rgb(41, 40, 49); width: 100%;
-     height: 60px; display: flex; justify-content: center; align-items: center; justify-content: space-around; position: fixed;">
-
-        <div style="display: flex; flex-direction: row; align-items: center;" class="logo">
-            <ion-icon style="color: rgb(41, 40, 49); font-size: 40px;" name="videocam-outline"></ion-icon>
-            <h1 style="font-size: 30px;">CINE CINEMA</h1>
-        </div>
-        <nav>
-            <ul style="display: flex; flex-direction: row; list-style: none; padding-right: 20px;">
-                <li style="padding-right: 20px; text-transform: uppercase; font-weight: bolder;">
-                    <a href="#programacao" style="text-decoration: none; color: inherit;">Programação</a>
-                </li>
-                <li style="padding-right: 20px; text-transform: uppercase; font-weight: bolder;">
-                    <a href="#ingresso" style="text-decoration: none; color: inherit;">Ingressos</a>
-                </li>
-                <li style="padding-right: 20px; text-transform: uppercase; font-weight: bolder;">
-                    <a href="#comentario" style="text-decoration: none; color: inherit;">Comentários</a>
-                </li>
-            </ul>
-        </nav>
-        <button onclick="location.href='mailto:estherquuarterollii@gmail.com'" style="text-transform: uppercase; background-color: rgb(41, 40, 49); border-radius:5px; padding:10px; color:white; cursor: pointer;">
-            Contato
-        </button>
-        
-    </header>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
     
+    <link rel="stylesheet" href="style.css">
     
-    <!-- Trailer -->
-    <aside style="margin-top: 20px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
-        <h1 style="padding-top: 50px;">TRAILER EM DESTAQUE</h1>
-        <iframe width="1020" height="315" src="https://www.youtube.com/embed/_NzqP0jmk3o?si=Gv0I-pE7xL0QHppm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </aside>
-    
-    <!-- Programação -->
-    <section id="programacao"style="width: 1020px; display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
-        
-        <!-- Tabela de Filmes -->
-        <table style="width: 100%; border-collapse: collapse; text-align: center; background: #333; border-radius: 10px; overflow: hidden;">
-            <tr style="background:#E50914;">
-                <th>Nome</th>
-                <th>Gênero</th>
-                <th>Tipo</th>
-            </tr>
-            <tr >
-                <td style="padding-bottom: 7px;padding-top: 3px;">Better Man</td>
-                <td style="padding-bottom: 7px;padding-top: 3px;">Musical</td>
-                <td style="padding-bottom: 7px;padding-top: 3px;">Legendado</td>
-            </tr>
-            <tr>
-                <td style="padding-bottom: 7px;padding-top: 3px;">Uma Advogada Brilhante</td>
-                <td style="padding-bottom: 7px;padding-top: 3px;">Comédia</td>
-                <td style="padding-bottom: 7px;padding-top: 3px;">Dublado</td>
-            </tr>
-            <tr>
-                <td style="padding-bottom: 7px;padding-top: 3px;">O Homem Cão</td>
-                <td style="padding-bottom: 7px;padding-top: 3px;">Infantil</td>
-                <td style="padding-bottom: 7px;padding-top: 3px;">Dublado</td>
-            </tr>
-        </table>
-        
-        <!-- Filme Específico 1  -->
-                <!-- As divs podem ser alteradas por figure -->
-        <div style="text-align: center; width: 1020px; margin-top: 20px;">
-            <h2>BETTER MAN</h2>
-            <img src="assets/bannerfime.jpeg" alt="Banner do Filme" style="width: 100%; border-radius: 10px;">
-            <p STYLE="font-size: large;" >A ascensão do famoso cantor e compositor britânico Robbie Williams.
-                 Depois de se tornar uma estrela com a boy band Take That na década de 1990, 
-                 ele encontrou o sucesso solo novamente com "Angels".</p>
-        </div>
-        
-        <!-- Tabela de Horários -->
-        <table style="width: 100%; margin-top: 10px; border-collapse: collapse; text-align: center; background: #333; border-radius: 10px; overflow: hidden;">
-            <tr style="background: #E50914;">
-                <th>Dia</th><th>Horário</th><th>Tipo</th><th>Sala</th><th>Ação</th>
-            </tr>
-            <tr>
-                <td style="padding-bottom: 7px;padding-top: 3px;">12/04</td>
-                <td style="padding-bottom: 7px;padding-top: 3px;">12:00</td>
-                <td style="padding-bottom: 7px;padding-top: 3px;">3D</td>
-                <td style="padding-bottom: 7px;padding-top: 3px;">4</td>
-                <td style="padding-bottom: 7px;padding-top: 3px;">
-                <button style="padding: 5px; background-color: #FFC107;">Comprar</button>
-            </td>
-        </tr>
-            <tr>
-                <td style="padding-bottom: 7px;padding-top: 3px;">12/04</td>
-                <td style="padding-bottom: 7px;padding-top: 3px;">12:00</td>
-                <td style="padding-bottom: 7px;padding-top: 3px;">2D</td>
-                <td style="padding-bottom: 7px;padding-top: 3px;">5</td>
-                <td style="padding-bottom: 7px;padding-top: 3px;">
-                <button style="padding: 5px; background-color: #FFC107;">Comprar</button>
-            </td>
-            </tr>
-            <tr>
-                <td style="padding-bottom: 7px;padding-top: 3px;">12/04</td>
-                <td style="padding-bottom: 7px;padding-top: 3px;">14:00</td>
-                <td style="padding-bottom: 7px;padding-top: 3px;">3D</td>
-                <td style="padding-bottom: 7px;padding-top: 3px;">4</td>
-                <td style="padding-bottom: 7px;padding-top: 3px;"><button style="padding: 5px; background-color: #FFC107;">Comprar</button>
-                </td>
-            </tr>
-        </table>
-
-
-
-         <!-- Filme Específico 2  -->
-         <div style="text-align: center; width: 1020px; margin-top: 20px;">
-            <h2>UMA ADVOGADA BRILHANTE</h2>
-            <img src="assets/maxresdefault.jpg" alt="Banner do Filme" style="width: 100%; border-radius: 10px;">
-            <p STYLE="font-size: large;">Dr. Michelle, um advogado recém-divorciado, decide se disfarçar de mulher para não perder seu emprego durante uma reestruturação
-                e conseguir a guarda de seu filho. No entanto, viver como Dra. Michele se revela mais desafiador do que esperado.</p>
-        </div>
-        
-        <!-- Tabela de Horários -->
-        <table style="width: 100%; margin-top: 10px; border-collapse: collapse; text-align: center; background: #333; border-radius: 10px; overflow: hidden;">
-            <tr style="background: #E50914;">
-                <th>Dia</th><th>Horário</th><th>Tipo</th><th>Sala</th><th>Ação</th>
-            </tr>
-            <tr>
-                <td style="padding-bottom: 7px;padding-top: 3px;">12/04</td>
-                <td style="padding-bottom: 7px;padding-top: 3px;">12:00</td>
-                <td style="padding-bottom: 7px;padding-top: 3px;">3D</td>
-                <td style="padding-bottom: 7px;padding-top: 3px;">4</td>
-                <td style="padding-bottom: 7px;padding-top: 3px;">
-                <button style="padding: 5px; background-color: #FFC107;">Comprar</button>
-            </td>
-        </tr>
-            <tr>
-                <td style="padding-bottom: 7px;padding-top: 3px;">12/04</td>
-                <td style="padding-bottom: 7px;padding-top: 3px;">12:00</td>
-                <td style="padding-bottom: 7px;padding-top: 3px;">2D</td>
-                <td style="padding-bottom: 7px;padding-top: 3px;">5</td>
-                <td style="padding-bottom: 7px;padding-top: 3px;">
-                <button style="padding: 5px; background-color: #FFC107;">Comprar</button>
-            </td>
-            </tr>
-            <tr>
-                <td style="padding-bottom: 7px;padding-top: 3px;">12/04</td>
-                <td style="padding-bottom: 7px;padding-top: 3px;">14:00</td>
-                <td style="padding-bottom: 7px;padding-top: 3px;">3D</td>
-                <td style="padding-bottom: 7px;padding-top: 3px;">4</td>
-                <td style="padding-bottom: 7px;padding-top: 3px;"><button style="padding: 5px; background-color: #FFC107;">Comprar</button>
-                </td>
-            </tr>
-        </table>
-
-
-
-         <!-- Filme Específico 3  -->
-         <div style="text-align: center; width: 1020px; margin-top: 20px;">
-            <h2>BETTER MAN</h2>
-            <img src="assets/images (2).jpeg" alt="Banner do Filme" style="width: 100%; border-radius: 10px;">
-            <p STYLE="font-size: large;">Uma cirurgia que salva vidas une um policial e seu fiel cão policial, e o Homem-Cão nasce.
-                 Aprendendo a aceitar sua nova identidade, Homem-Cão precisa impedir que o supervilão felino Petey cometa uma série de crimes.</p>
-        </div>
-        
-        <!-- Tabela de Horários -->
-        <table style="width: 100%; margin-top: 10px; border-collapse: collapse; text-align: center; background: #333; border-radius: 10px; overflow: hidden;">
-            <tr style="background: #E50914;">
-                <th>Dia</th><th>Horário</th><th>Tipo</th><th>Sala</th><th>Ação</th>
-            </tr>
-            <tr>
-                <td style="padding-bottom: 7px;padding-top: 3px;">12/04</td>
-                <td style="padding-bottom: 7px;padding-top: 3px;">12:00</td>
-                <td style="padding-bottom: 7px;padding-top: 3px;">3D</td>
-                <td style="padding-bottom: 7px;padding-top: 3px;">4</td>
-                <td style="padding-bottom: 7px;padding-top: 3px;">
-                <button style="padding: 5px; background-color: #FFC107;">Comprar</button>
-            </td>
-        </tr>
-            <tr>
-                <td style="padding-bottom: 7px;padding-top: 3px;">12/04</td>
-                <td style="padding-bottom: 7px;padding-top: 3px;">12:00</td>
-                <td style="padding-bottom: 7px;padding-top: 3px;">2D</td>
-                <td style="padding-bottom: 7px;padding-top: 3px;">5</td>
-                <td style="padding-bottom: 7px;padding-top: 3px;">
-                <button style="padding: 5px; background-color: #FFC107;">Comprar</button>
-            </td>
-            </tr>
-            <tr>
-                <td style="padding-bottom: 7px;padding-top: 3px;">12/04</td>
-                <td style="padding-bottom: 7px;padding-top: 3px;">14:00</td>
-                <td style="padding-bottom: 7px;padding-top: 3px;">3D</td>
-                <td style="padding-bottom: 7px;padding-top: 3px;">4</td>
-                <td style="padding-bottom: 7px;padding-top: 3px;"><button style="padding: 5px; background-color: #FFC107;">Comprar</button>
-                </td>
-            </tr>
-        </table>
-    </section>
-    
-    <!-- Formulário de Compra -->
-    <section id="ingresso"style="width: 1020px; text-align: center; margin-top: 20px;">
-        <h2>Comprar Ingresso</h2>
-        <form method="POST" action="">
-            <select name="filme" style="width: 1035px; padding: 5px;">
-                <option>Selecione um filme</option>
-                <option>Better Man</option>
-                <option>Uma Advogada Brilhante</option>
-                <option>O Homem Cão</option>
-            </select>
-            <select name="horário" style="width: 1035px; padding: 5px; margin-top: 5px;">
-                <option>Selecione um horário</option>
-                <option>12:00 - 3D</option>
-                <option>12:00 - 2D</option>
-                <option>14:00</option>
-            </select>
-            <input type="date" name="data" placeholder="Data" style="width: 100%; padding: 5px; margin-top: 5px;">
-        
-            <input type="number" name="quantidade" placeholder="Quantidade de ingressos" style="width: 100%; padding: 5px; margin-top: 5px;">
-            <button type="submit" style="width:1035px; padding: 10px; margin-top: 10px; background: green; color: white; border: none;">Ir para Pagamento</button>
-        </form>
-    </section>
-    
-    <!-- Seção de Comentários -->
-    <section id="comentario"style="width: 1020px; text-align: center; margin-top: 20px; ">
-        <h2>Deixe seu comentário</h2>
-        <form method="POST" action="">
-            <select name="sessao" style="width: 1035px; padding: 5px;">
-                <option>Selecione a sessão</option>
-                <option>Better Man - 12:00</option>
-                <option>Uma Advogada Brilhante - 14:00</option>
-            </select>
-            <input type="text" name="nome" placeholder="Seu nome (opcional)" style="width: 100%; padding: 5px; margin-top: 5px;">
-            <textarea name="comentario" placeholder="Digite seu comentário" style="width: 100%; padding: 5px; margin-top: 5px;"></textarea>
-            <button type="submit" style="width: 1035px; padding: 10px; margin-top: 10px; background: #FFC107; color: white; border: none;">Enviar Comentário</button>
-        </form>
-    </section>
-    <footer style="background-color: #c21010; color: white; padding: 20px; margin-top: 30px; width: 100%; display: flex; align-items: center; justify-content: center;">
-        &copy; 2025 Cine Cinema. Todos os direitos reservados.
-    </footer>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+
+    <header id="header">
+        <div class="container">
+            <a href="#" class="logo">
+                <ion-icon name="film-outline"></ion-icon>
+                CineMax
+            </a>
+            <nav id="nav">
+                <button id="menu-toggle" aria-label="Abrir Menu" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </button>
+                <ul id="menu">
+                    <li><a class="nav-link" href="#movies">Em Cartaz</a></li>
+                    <li><a class="nav-link" href="#tickets">Ingressos</a></li>
+                    <li><a class="nav-link" href="#comments">Avaliações</a></li>
+                </ul>
+            </nav>
+            <a href="mailto:contato@cinemax.com" class="btn-contact">Contato</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="container">
+                <h1>A magia do cinema, mais perto de você.</h1>
+                <p>Confira os lançamentos da semana e garanta já o seu ingresso!</p>
+                <a href="#movies" class="btn">Ver Filmes em Cartaz</a>
+            </div>
+        </section>
+
+        <section id="movies" class="section">
+            <div class="container">
+                <h2 class="section-title">🎬 Em Cartaz</h2>
+                <div class="movie-grid">
+                    <article class="movie-card hidden">
+                        <img src="https://image.tmdb.org/t/p/w500/u6mY2tV0b8Pzn1T2Oa5aIsceg07.jpg" alt="Pôster do filme Divertida Mente 2">
+                        <div class="card-content">
+                            <h3>Divertida Mente 2</h3>
+                            <p>As emoções de Riley enfrentam um desafio inesperado com a chegada da Ansiedade e outras novas emoções.</p>
+                            <span class="badge genre">Animação</span>
+                            <span class="badge type">Dublado</span>
+                        </div>
+                    </article>
+                    <article class="movie-card hidden">
+                        <img src="https://image.tmdb.org/t/p/w500/wPen3tI0S2s2OQ63aTidsJj7g5l.jpg" alt="Pôster do filme Um Lugar Silencioso: Dia Um">
+                        <div class="card-content">
+                            <h3>Um Lugar Silencioso: Dia Um</h3>
+                            <p>Descubra como tudo começou no dia em que o mundo se calou para sobreviver às criaturas que caçam pelo som.</p>
+                            <span class="badge genre">Terror</span>
+                            <span class="badge type">Legendado</span>
+                        </div>
+                    </article>
+                    <article class="movie-card hidden">
+                        <img src="https://image.tmdb.org/t/p/w500/1mSK_yTzlg324aKqBU2aNxh4n29.jpg" alt="Pôster do filme Meu Malvado Favorito 4">
+                        <div class="card-content">
+                            <h3>Meu Malvado Favorito 4</h3>
+                            <p>Gru e sua família enfrentam um novo vilão, Maxime Le Mal, enquanto lidam com a chegada de um novo membro na família.</p>
+                            <span class="badge genre">Comédia</span>
+                            <span class="badge type">Dublado</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="tickets" class="section">
+            <div class="container">
+                <h2 class="section-title">🎟️ Compre seu Ingresso</h2>
+                <form class="ticket-form hidden">
+                    <div class="form-group">
+                        <label for="movie-select">Escolha o filme:</label>
+                        <select id="movie-select" name="filme">
+                            <option value="">Selecione...</option>
+                            <option value="divertida-mente-2">Divertida Mente 2</option>
+                            <option value="um-lugar-silencioso">Um Lugar Silencioso: Dia Um</option>
+                            <option value="meu-malvado-favorito-4">Meu Malvado Favorito 4</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="session-select">Escolha a sessão:</label>
+                        <select id="session-select" name="sessao">
+                            <option value="">Selecione...</option>
+                            <option value="14:00-2d">14:00 (2D)</option>
+                            <option value="16:30-3d">16:30 (3D)</option>
+                            <option value="19:00-2d">19:00 (2D)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="ticket-quantity">Quantidade:</label>
+                        <input type="number" id="ticket-quantity" name="quantidade" min="1" max="10" value="1">
+                    </div>
+                    <button type="submit" class="btn">Comprar Agora</button>
+                </form>
+            </div>
+        </section>
+        
+        <section id="comments" class="section">
+            <div class="container">
+                <h2 class="section-title">⭐ Deixe sua Avaliação</h2>
+                 <form class="ticket-form hidden">
+                    <div class="form-group">
+                        <label for="comment-name">Seu nome (opcional):</label>
+                        <input type="text" id="comment-name" name="nome" placeholder="Ex: João Silva">
+                    </div>
+                    <div class="form-group">
+                        <label for="comment-text">Sua avaliação:</label>
+                        <textarea id="comment-text" name="comentario" rows="4" placeholder="O que você achou do filme e da sua experiência?"></textarea>
+                    </div>
+                    <button type="submit" class="btn">Enviar Avaliação</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 CineMax. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
